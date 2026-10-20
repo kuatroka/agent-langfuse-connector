@@ -1,5 +1,7 @@
 # agent-langfuse-connector
 
+[![CI](https://github.com/kuatroka/agent-langfuse-connector/actions/workflows/ci.yml/badge.svg)](https://github.com/kuatroka/agent-langfuse-connector/actions/workflows/ci.yml)
+
 Source of truth for the local Langfuse connectors used by Claude Code, Factory Droid,
 Devin, Amp, Codex, Pi, and OMP.
 
