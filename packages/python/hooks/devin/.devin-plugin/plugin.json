@@ -1,0 +1,5 @@
+{
+  "name": "langfuse-unified",
+  "version": "1.0.0",
+  "description": "Export Devin CLI turns to Langfuse with the unified coding-agent metadata contract"
+}

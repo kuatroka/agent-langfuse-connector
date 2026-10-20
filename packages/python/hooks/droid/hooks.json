@@ -1,0 +1,13 @@
+{
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "${DROID_PLUGIN_ROOT}/hooks/run.sh",
+          "timeout": 5
+        }
+      ]
+    }
+  ]
+}

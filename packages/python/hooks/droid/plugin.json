@@ -1,0 +1,9 @@
+{
+  "name": "factory-langfuse",
+  "description": "Trace Factory Droid sessions to Langfuse using a Stop hook",
+  "version": "1.0.0",
+  "author": {
+    "name": "Local"
+  },
+  "keywords": ["langfuse", "observability", "hooks", "tracing"]
+}

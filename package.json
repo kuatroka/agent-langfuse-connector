@@ -1,0 +1,12 @@
+{
+  "name": "agent-langfuse-connector",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Source of truth for local coding-agent Langfuse connectors",
+  "scripts": {
+    "plan": "python3 tools/connector.py plan",
+    "install": "python3 tools/connector.py install --all",
+    "doctor": "python3 tools/connector.py doctor",
+    "test": "python3 -m unittest discover -s tests -v"
+  }
+}

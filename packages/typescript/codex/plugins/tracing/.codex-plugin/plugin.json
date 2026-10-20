@@ -1,0 +1,29 @@
+{
+  "name": "tracing-normalized",
+  "version": "1.0.0",
+  "description": "Trace Codex sessions to Langfuse with normalized harness, model, and reasoning tags.",
+  "author": {
+    "name": "Langfuse",
+    "email": "support@langfuse.com",
+    "url": "https://langfuse.com"
+  },
+  "homepage": "https://github.com/langfuse/codex-observability-plugin#readme",
+  "repository": "https://github.com/langfuse/codex-observability-plugin",
+  "license": "MIT",
+  "keywords": ["codex", "hooks", "langfuse", "observability", "tracing"],
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Langfuse Tracing (Normalized)",
+    "shortDescription": "Trace Codex with normalized comparison tags",
+    "longDescription": "Uploads completed Codex rollout transcripts to Langfuse with common harness, model, and reasoning-effort tags for cross-harness evaluation.",
+    "developerName": "Local",
+    "category": "Coding",
+    "capabilities": ["Read"],
+    "websiteURL": "https://langfuse.com",
+    "privacyPolicyURL": "https://langfuse.com/privacy",
+    "termsOfServiceURL": "https://langfuse.com/terms",
+    "defaultPrompt": [],
+    "brandColor": "#0A60B5",
+    "screenshots": []
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+*.log
+.DS_Store
+
+# Codex writes a per-rollout dedup sidecar next to each transcript at runtime.
+*.jsonl.langfuse
+
+# Local debugging
+debug.log
+
+# Note: plugins/tracing/dist/ is intentionally committed — Codex runs the
+# bundled hook directly without an install/build step.

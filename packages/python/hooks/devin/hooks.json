@@ -1,0 +1,14 @@
+{
+  "Stop": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 ${DEVIN_PLUGIN_ROOT}/export_devin.py",
+          "timeout": 20
+        }
+      ]
+    }
+  ]
+}
