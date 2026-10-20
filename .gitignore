@@ -6,3 +6,9 @@ node_modules/
 dist/
 !packages/typescript/codex/plugins/tracing/dist/
 *.log
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
