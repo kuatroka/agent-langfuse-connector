@@ -21,10 +21,32 @@ python3 tools/connector.py verify --harness pi --session-id <session-id>
 `--only claude droid` to update selected adapters. Backups and the install
 state live under `~/.local/share/agent-langfuse-connector/`.
 
+## Adapters
+
+| Agent | Source | Installer target |
+| --- | --- | --- |
+| Claude Code | `packages/python/hooks/claude` | `~/.claude/hooks/langfuse_hook.py` |
+| Factory Droid | `packages/python/hooks/droid` | local marketplace and plugin cache |
+| Devin | `packages/python/hooks/devin` | native `langfuse-unified` plugin |
+| Amp | `packages/typescript/amp` | Amp user plugin repository |
+| Codex | `packages/typescript/codex` | active Codex plugin cache |
+| Pi | `packages/typescript/pi` | `~/.pi/agent/npm/node_modules/pi-langfuse` |
+| OMP | `packages/typescript/omp` | staged under `~/.omp/plugins`, linked into node_modules |
+
+## Documentation
+
+- `spec/PLAN.md` describes the consolidation design and delivery phases.
+- `spec/VERIFICATION.md` records the live per-adapter totals.
+- `spec/CONTRACT.md` defines the trace and metadata contract.
+- `spec/TOKEN-ACCOUNTING-SPEC.md` records token placement decisions.
+- `spec/LANGFUSE-V4-MIGRATION.md` records the v4 API cutover.
+- `spec/history/` contains the earlier audit and implementation specs.
+
 ## Layout
 
 ```text
-spec/                         contracts, migration notes, test matrix
+spec/                         current contracts, plan, and verification
+spec/history/                 earlier audit and implementation specifications
 packages/python/              Claude, Droid, Devin, shared Python primitives
 packages/typescript/amp/      Amp user plugin
 packages/typescript/codex/    Codex plugin source and built artifact

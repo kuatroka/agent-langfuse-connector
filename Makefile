@@ -1,7 +1,7 @@
 PYTHON ?= python3
 REPO := $(CURDIR)
 
-.PHONY: check py-compile ts-check test install doctor plan verify
+.PHONY: check py-compile ts-check test install doctor plan verify clean
 
 check: py-compile ts-check test
 
@@ -29,3 +29,7 @@ doctor:
 verify:
 	@test -n "$(HARNESS)" -a -n "$(SESSION)" || (echo "usage: make verify HARNESS=pi SESSION=<id>" && exit 2)
 	$(PYTHON) tools/connector.py verify --harness "$(HARNESS)" --session-id "$(SESSION)"
+
+clean:
+	find . -name '__pycache__' -type d -prune -exec rm -rf '{}' +
+	find . -name '.DS_Store' -delete
